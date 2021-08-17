@@ -21,7 +21,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - Load balancers shield the VMs behind them by providing confidentiality of how many machines are hosting the website.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- A jumpbox supports the confidentiality provided by the load balancer because it is an access point to the vms. It makes it so they do not have to be exposed to the public internet directly in order for admins to patch or deploy to them.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system metrics.
 - Filebeat watches for changes to files on the monitored system.
